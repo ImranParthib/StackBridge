@@ -17,9 +17,7 @@ function App() {
   return (
     <div>
       <Header />
-      <header className="text-center mt-8">
-        <h1 className="text-3xl">Stack Bridge</h1>
-      </header>
+
       <main>
         <Routes>
           <Route path="/" element={<Home />} />

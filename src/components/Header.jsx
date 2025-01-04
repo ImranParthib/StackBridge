@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="bg-white py-4 px-20 flex items-center justify-between shadow-sm">
+    <nav
+      className={`fixed top-0 left-0 w-full py-4 px-20 flex items-center justify-between shadow-sm transition-colors duration-300 z-50 ${
+        isScrolled ? "bg-white" : "bg-transparent"
+      }`}
+    >
       {/* Logo */}
       <Link to="/" className="flex items-center space-x-2">
         <img
@@ -102,7 +122,7 @@ const Header = () => {
         </Link>
         <Link
           to="/consultation"
-          className="bg-[#dd0429] text-white px-6 py-4   hover:bg-[#091f40] hover:text-red-600 transition-colors font-semibold"
+          className="bg-[#dd0429] text-white px-6 py-4 hover:bg-[#091f40] hover:text-red-600 transition-colors font-semibold"
         >
           Free Consultation
         </Link>
