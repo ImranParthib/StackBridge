@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import safayet from "../../assets/testimonials/AI Safayet.png";
 import anonymous from "../../assets/testimonials/anonymous.png";
 import Elival from "../../assets/testimonials/Elival.png";

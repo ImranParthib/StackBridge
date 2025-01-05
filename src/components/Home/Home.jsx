@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import   { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import bannerOne from "../../assets/banner/deal.png";
 import bannerTwo from "../../assets/banner/strategy.png";
