@@ -132,12 +132,12 @@ const Header = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="lg:hidden p-2 hover:bg-gray-100 rounded-md"
+          className="lg:hidden p-2 text-red-600 rounded-md"
         >
           {isMobileMenuOpen ? (
-            <X className="w-6 h-6" />
+            <X className="w-8 h-8" />
           ) : (
-            <Menu className="w-6 h-6" />
+            <Menu className="w-8 h-8" />
           )}
         </button>
       </nav>
@@ -152,7 +152,7 @@ const Header = () => {
 
       {/* Mobile Menu Panel */}
       <div
-        className={`fixed top-0 left-0 h-full w-[60%] bg-white transform transition-transform duration-300 ease-in-out z-50 lg:hidden ${
+        className={`fixed top-0 left-0 h-full w-8/12 bg-white transform transition-transform duration-300 ease-in-out z-50 lg:hidden ${
           isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -160,11 +160,7 @@ const Header = () => {
           {/* Mobile Logo and Company Name */}
           <div className="p-4">
             <Link to="/" className="flex items-center space-x-2">
-              <img
-                src="/src/images/logo.png"
-                alt="Stack Bridge Logo"
-                className="h-12"
-              />
+              <img src={logo} alt="Stack Bridge Logo" className="h-16" />
             </Link>
           </div>
 
@@ -172,12 +168,12 @@ const Header = () => {
           <div className="w-full h-0.5 bg-red-600" />
 
           {/* Mobile Navigation Links */}
-          <div className="flex-1 overflow-y-auto py-4">
+          <div className="flex-1 overflow-y-auto py-12 font-semibold text-lg">
             <ul className="px-4 space-y-4">
               <li>
                 <Link
                   to="/"
-                  className="block text-[#14294A] font-semibold hover:text-red-600 transition-colors"
+                  className="block text-[#14294A]   hover:text-red-600 transition-colors"
                 >
                   Home
                 </Link>
@@ -185,7 +181,7 @@ const Header = () => {
               <li>
                 <Link
                   to="/about-us"
-                  className="block text-[#14294A] font-semibold hover:text-red-600 transition-colors"
+                  className="block text-[#14294A]  hover:text-red-600 transition-colors"
                 >
                   About Us
                 </Link>
@@ -193,7 +189,7 @@ const Header = () => {
               <li>
                 <button
                   onClick={() => setIsServicesOpen(!isServicesOpen)}
-                  className="flex items-center justify-between w-full text-[#14294A] font-semibold hover:text-red-600 transition-colors"
+                  className="flex items-center justify-between w-full text-[#14294A]   hover:text-red-600 transition-colors"
                 >
                   <span>Our Solutions</span>
                   <ChevronDown
@@ -236,7 +232,7 @@ const Header = () => {
               <li>
                 <Link
                   to="/blogs"
-                  className="block text-[#14294A] font-semibold hover:text-red-600 transition-colors"
+                  className="block text-[#14294A]  hover:text-red-600 transition-colors"
                 >
                   Blogs
                 </Link>
@@ -244,7 +240,7 @@ const Header = () => {
               <li>
                 <Link
                   to="/contact-us"
-                  className="block text-[#14294A] font-semibold hover:text-red-600 transition-colors"
+                  className="block text-[#14294A]   hover:text-red-600 transition-colors"
                 >
                   Contact Us
                 </Link>

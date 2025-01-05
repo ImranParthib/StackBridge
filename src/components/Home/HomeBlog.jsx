@@ -1,6 +1,8 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import ecommerceSEO from "../../assets/blog/ecommerceSEO.png";
+import ecommercePlatform from "../../assets/blog/ecommercePlatform.png";
 
 const BlogCard = ({ image, title, date, link }) => (
   <Link to={link} className="group">
@@ -31,13 +33,13 @@ const BlogCard = ({ image, title, date, link }) => (
 const HomeBlog = () => {
   const blogPosts = [
     {
-      image: "/src/assets/blog/ecommerceSeo.png",
+      image: ecommerceSEO,
       title: "eCommerce SEO: The Ultimate Guide to Reach The Best Result",
       date: "22 August, 2024",
       link: "/blog/ecommerce-seo-guide",
     },
     {
-      image: "/src/assets/blog/ecommercePlatform.png",
+      image: ecommercePlatform,
       title: "9 Best eCommerce Platform - Find the One That's Right for You",
       date: "22 August, 2024",
       link: "/blog/best-ecommerce-platforms",

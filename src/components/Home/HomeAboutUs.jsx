@@ -1,6 +1,11 @@
 import { ArrowRight, Target, Users, Code } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import mission from "../../assets/mission/mission.png";
+import barChart from "../../assets/about/barChart.png";
+import terminal from "../../assets/about/terminal.png";
+import code from "../../assets/about/code.png";
+import bug from "../../assets/about/bug.png";
 
 const HomeAboutUs = () => {
   const stats = [
@@ -55,7 +60,7 @@ const HomeAboutUs = () => {
             <div className="flex-shrink-0">
               <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center">
                 <img
-                  src="/src/assets/mission/mission.png"
+                  src={mission}
                   alt="Mission Icon"
                   className="w-10 h-10 object-contain"
                 />
@@ -98,15 +103,15 @@ const HomeAboutUs = () => {
             <div className="space-y-6">
               <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
                 <img
-                  src="/src/assets/about/barChart.png"
-                  alt="Digital solutions 1"
+                  src={barChart}
+                  alt="Bar Chart"
                   className="w-full h-64 object-cover"
                 />
               </div>
               <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
                 <img
-                  src="/src/assets/about/terminal.png"
-                  alt="Digital solutions 3"
+                  src={terminal}
+                  alt="Code Terminal"
                   className="w-full h-48 object-cover"
                 />
               </div>
@@ -114,15 +119,15 @@ const HomeAboutUs = () => {
             <div className="space-y-6 pt-12">
               <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
                 <img
-                  src="/src/assets/about/barChart.png"
-                  alt="Digital solutions 2"
+                  src={code}
+                  alt="Coding"
                   className="w-full h-48 object-cover"
                 />
               </div>
               <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
                 <img
-                  src="/src/assets/about/bug.png"
-                  alt="Digital solutions 4"
+                  src={bug}
+                  alt="Bug Fixing"
                   className="w-full h-64 object-cover"
                 />
               </div>
