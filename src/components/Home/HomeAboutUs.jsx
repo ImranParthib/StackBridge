@@ -1,4 +1,3 @@
- 
 import { ArrowRight, Target, Users, Code } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -86,7 +85,7 @@ const HomeAboutUs = () => {
         <div className="relative ">
           {/* Decorative dots pattern */}
           <div
-            className="animate-spin absolute top-0 right-0 w-32 h-32 opacity-50 -translate-y-8 translate-x-8   "
+            className=" absolute top-0 right-0 w-32 h-32 opacity-50 -translate-y-8 translate-x-8   "
             style={{
               backgroundImage:
                 "radial-gradient(circle, #888 2px, transparent 2px)",
