@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const BlogCard = ({ image, title, date, link }) => (
   <Link to={link} className="group">
@@ -84,3 +85,10 @@ const HomeBlog = () => {
 };
 
 export default HomeBlog;
+
+BlogCard.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+};

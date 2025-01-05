@@ -86,9 +86,9 @@ const TestimonialSlider = () => {
           <span className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-12 h-0.5 bg-red-500"></span>
         </span>
         <h2 className="text-2xl sm:text-4xl font-bold mt-4">
-          WHAT SAY GALLANT
+          WHAT SAY STACK
           <br />
-          DIGITAL CLIENTS!
+          BRIDGE CLIENTS!
         </h2>
       </div>
 

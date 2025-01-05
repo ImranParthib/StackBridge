@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import {
   Code,
   Globe,
@@ -115,3 +116,10 @@ const Services = () => {
 };
 
 export default Services;
+
+Services.propTypes = {
+  number: PropTypes.string.isRequired,
+  icon: PropTypes.elementType.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
