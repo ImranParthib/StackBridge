@@ -3,6 +3,8 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import bannerOne from "../../assets/banner/deal.png";
 import bannerTwo from "../../assets/banner/strategy.png";
 import HomeAboutUs from "./HomeAboutUs";
+import Services from "./ServiceCard";
+import Testimonial from "./Testimonial";
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -132,6 +134,14 @@ const Home = () => {
       {/* About Us Section */}
       <section id="about" className="bg-white">
         <HomeAboutUs />
+      </section>
+      {/* Services Section */}
+      <section id="services" className="bg-white">
+        <Services />
+      </section>
+      {/* Testimonial Section */}
+      <section id="testimonial" className="bg-white">
+        <Testimonial />
       </section>
     </main>
   );

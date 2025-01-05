@@ -3,7 +3,7 @@ import { Facebook, Linkedin, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-950 text-white py-16">
+    <footer className="bg-[#091f40] text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
           {/* Company Info */}
@@ -27,7 +27,7 @@ const Footer = () => {
           <div className="space-y-6">
             <h3 className="text-xl font-bold">Contact & Address</h3>
             <div className="space-y-4 text-gray-300">
-              <p>contact@gallantdigital360.com</p>
+              <p>contact@stackbridge360.com</p>
               <p>
                 Bangladesh: Salaha Limelight, House- 1/2, Block- A, Bank Colony,
                 Savar, Dhaka-1340
