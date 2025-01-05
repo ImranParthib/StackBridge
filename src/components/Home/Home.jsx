@@ -1,4 +1,4 @@
-import   { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import bannerOne from "../../assets/banner/deal.png";
 import bannerTwo from "../../assets/banner/strategy.png";
@@ -6,6 +6,7 @@ import HomeAboutUs from "./HomeAboutUs";
 import Services from "./ServiceCard";
 import Testimonial from "./Testimonial";
 import HomeBlog from "./HomeBlog";
+import PortfolioSlider from "./PortfolioSlider";
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -140,6 +141,11 @@ const Home = () => {
       <section id="services" className="bg-white">
         <Services />
       </section>
+      {/* IT Portfolio and Products Section */}
+      <section id="portfolio" className="bg-white">
+        <PortfolioSlider />
+      </section>
+
       {/* Testimonial Section */}
       <section id="testimonial" className="bg-white">
         <Testimonial />

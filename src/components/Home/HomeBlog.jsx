@@ -19,7 +19,7 @@ const BlogCard = ({ image, title, date, link }) => (
           {title}
         </h3>
         <p className="text-gray-600 text-sm">
-          This blog is posted by Stack Bridge at {date}
+          This blog is posted by Stack Bridge on {date}
         </p>
         <div className="mt-4 flex items-center text-red-600 font-medium">
           Read more
@@ -29,6 +29,13 @@ const BlogCard = ({ image, title, date, link }) => (
     </div>
   </Link>
 );
+
+BlogCard.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+};
 
 const HomeBlog = () => {
   const blogPosts = [
@@ -86,10 +93,3 @@ const HomeBlog = () => {
 };
 
 export default HomeBlog;
-
-BlogCard.propTypes = {
-  image: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
-};
