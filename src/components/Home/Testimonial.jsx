@@ -1,4 +1,4 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import safayet from "../../assets/testimonials/AI Safayet.png";
 import anonymous from "../../assets/testimonials/anonymous.png";
 import Elival from "../../assets/testimonials/Elival.png";
@@ -13,7 +13,7 @@ const TestimonialSlider = () => {
       role: "CEO, RF3 World UK",
       image: anonymous,
       content:
-        "Gallant Digital did an exceptionally good job. They completed every aspect of the project with good attention to detail. They went above and beyond to render excellent service and took time to explain to me the progress of the project and made valuable suggestions as well. I am truly happy with the areas of my website he updated, exactly as I wanted to. I would certainly hire them again!",
+        " Stack Bridge did an exceptionally good job. They completed every aspect of the project with good attention to detail. They went above and beyond to render excellent service and took time to explain to me the progress of the project and made valuable suggestions as well. I am truly happy with the areas of my website he updated, exactly as I wanted to. I would certainly hire them again!",
     },
     {
       name: "Janelle Billingslea",
