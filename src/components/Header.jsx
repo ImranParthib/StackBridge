@@ -124,7 +124,8 @@ const Header = () => {
             IN
           </Link>
           <Link
-            to="#"
+            target="_blank"
+            to="https://calendly.com/imranparthib13/30min?preview_source=et_card&month=2025-01"
             className="bg-[#dd0429] text-white px-4 py-3 hover:bg-[#091f40] hover:text-red-600 transition-colors font-semibold"
           >
             Free Consultation
