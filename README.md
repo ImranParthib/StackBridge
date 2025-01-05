@@ -2,6 +2,10 @@
 
 StackBridge is a modern, one-page React application designed to demonstrate creativity and technical proficiency. This project leverages Vite for a fast development experience and is styled using Tailwind CSS for a sleek and responsive user interface.
 
+### OverView
+
+![Website Overview](overview.png)
+
 ## Features
 
 - ⚡ **Vite-Powered**: Fast builds and an optimized development environment.
@@ -45,6 +49,16 @@ To set up and run the project locally, follow these steps:
 - **Vite**: For a fast and efficient development environment.
 - **Tailwind CSS**: For styling and responsiveness.
 - **JavaScript (ES6+)**: Core language for development.
+
+## Note
+
+This design was inspired by Gallant Digital. While efforts were made to ensure originality, some elements may resemble the referenced website. Future updates will focus on enhancing the interface to ensure more originality.
+
+## Future Update
+
+**logo** will be improved
+**originality** will be ensured
+**Routes** Will be Completed all routes
 
 ## License
 
