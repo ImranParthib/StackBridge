@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import ecommerceSEO from "../../assets/blog/ecommerceSEO.png";
+import ecommerceSEO from "../../assets/blog/ecommerceSeo.png";
 import ecommercePlatform from "../../assets/blog/ecommercePlatform.png";
 
 const BlogCard = ({ image, title, date, link }) => (
