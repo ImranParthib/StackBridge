@@ -86,7 +86,7 @@ const PortfolioSlider = () => {
 
   return (
     <div className="w-full mx-auto px-4 sm:px-0 mb-20 mt-20">
-      <div className="mb-12">
+      <div className="mb-16 ml-4 md:ml-32 lg:ml-60 xl:ml-64">
         <p className="text-red-500 text-sm font-medium uppercase tracking-wider relative inline-block">
           IT PORTFOLIO & PRODUCTS
           <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-red-500"></span>
