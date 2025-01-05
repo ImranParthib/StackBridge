@@ -1,11 +1,10 @@
 import React from "react";
 import bgImage from "../assets/banner/deal.png";
-import "../App.css";
 
 function Blogs() {
   return (
     <div
-      className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4 bg-zoom-out relative"
+      className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4   relative"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
