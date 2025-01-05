@@ -1,4 +1,4 @@
-import React from "react";
+ 
 import bgImage from "../assets/banner/deal.png";
 
 function Blogs() {

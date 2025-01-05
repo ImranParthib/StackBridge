@@ -1,4 +1,4 @@
-import React from "react";
+ 
 import { ArrowRight, Target, Users, Code } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";

@@ -1,4 +1,3 @@
-import React from "react";
 import bgImage from "../assets/background/contactUs.png";
 
 function ContactUs() {
@@ -14,7 +13,7 @@ function ContactUs() {
       <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
       <div className="relative z-10 text-center">
         <h2 className="text-4xl font-extrabold mb-6 text-white leading-tight tracking-wider">
-          We'd Love to Hear from You!
+          We&aposd Love to Hear from You!
         </h2>
         <p className="text-lg mb-8 text-gray-300 font-semibold">
           Reach out with any questions or feedback.

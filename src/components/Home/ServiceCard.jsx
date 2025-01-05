@@ -84,7 +84,7 @@ const Services = () => {
 
   return (
     <div>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="container mx-auto px-8 sm:px-24 lg:px-32 py-16">
         <div className="text-center mb-16">
           <p className="text-red-500 font-medium mb-4">SERVICE LIST</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -116,7 +116,7 @@ const Services = () => {
 
 export default Services;
 
-Services.propTypes = {
+ServiceCard.propTypes = {
   number: PropTypes.string.isRequired,
   icon: PropTypes.elementType.isRequired,
   title: PropTypes.string.isRequired,
