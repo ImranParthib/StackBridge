@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown, Menu, X } from "lucide-react";
+import logo from "../images/logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,11 +31,7 @@ const Header = () => {
       >
         {/* Logo and Company Name */}
         <Link to="/" className="flex items-center space-x-3">
-          <img
-            src="/src/images/logo.png"
-            alt="Stack Bridge Logo"
-            className="h-12 md:h-14"
-          />
+          <img src={logo} alt="Stack Bridge Logo" className="h-12 md:h-14" />
         </Link>
 
         {/* Desktop Navigation */}
