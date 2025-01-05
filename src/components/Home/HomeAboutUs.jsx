@@ -65,7 +65,7 @@ const HomeAboutUs = () => {
             <div>
               <h3 className="text-xl font-semibold mb-3">Our Mission</h3>
               <p className="text-gray-600 leading-relaxed">
-                At Gallant Digital, our mission is to revolutionize businesses
+                At Stack Bridge, our mission is to revolutionize businesses
                 through innovative tech solutions. Guided by client needs,
                 integrity, and a commitment to social impact, we shape a future
                 where technology propels success and positive change.
@@ -75,18 +75,18 @@ const HomeAboutUs = () => {
 
           <Link
             to="/about"
-            className="inline-flex items-center space-x-2 bg-red-600 text-white px-8 py-4 rounded-lg hover:bg-red-700 transition-colors duration-300 group shadow-lg hover:shadow-xl"
+            className="inline-flex items-center space-x-2  bg-[#dd0429] text-white px-4 py-3 hover:bg-[#091f40] hover:text-red-600 transition-colors font-semibold"
           >
-            <span className="font-semibold">Discover More</span>
+            <span className="font-semibold ">Discover More</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
           </Link>
         </div>
 
         {/* Right Image Grid */}
-        <div className="relative">
+        <div className="relative ">
           {/* Decorative dots pattern */}
           <div
-            className="absolute top-0 right-0 w-32 h-32 opacity-50 -translate-y-8 translate-x-8"
+            className="animate-spin absolute top-0 right-0 w-32 h-32 opacity-50 -translate-y-8 translate-x-8   "
             style={{
               backgroundImage:
                 "radial-gradient(circle, #888 2px, transparent 2px)",

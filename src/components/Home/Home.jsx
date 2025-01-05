@@ -5,6 +5,7 @@ import bannerTwo from "../../assets/banner/strategy.png";
 import HomeAboutUs from "./HomeAboutUs";
 import Services from "./ServiceCard";
 import Testimonial from "./Testimonial";
+import HomeBlog from "./HomeBlog";
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -17,7 +18,7 @@ const Home = () => {
       image: bannerOne,
     },
     {
-      subtitle: "WELCOME TO GALLANT DIGITAL",
+      subtitle: "WELCOME TO  Stack Bridge",
       title: "INNOVATIVE IT\nSOLUTIONS",
       image: bannerTwo,
     },
@@ -142,6 +143,10 @@ const Home = () => {
       {/* Testimonial Section */}
       <section id="testimonial" className="bg-white">
         <Testimonial />
+      </section>
+      {/* HomeBlog Section */}
+      <section id="testimonial" className="bg-white">
+        <HomeBlog />
       </section>
     </main>
   );

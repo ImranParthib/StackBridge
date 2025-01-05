@@ -10,18 +10,18 @@ import {
 import Stats from "./stats";
 
 const ServiceCard = ({ number, icon: Icon, title, description }) => (
-  <div className="p-8 border rounded-lg hover:shadow-lg transition-shadow relative">
-    <div className="absolute top-4 right-4 text-6xl text-gray-100">
+  <div className="p-6 md:p-8 border rounded-lg hover:shadow-lg transition-shadow relative">
+    <div className="absolute top-4 right-4 text-4xl md:text-6xl text-gray-100">
       {number}
     </div>
     <div className="mb-6">
       <Icon
-        className={`w-12 h-12 ${
+        className={`w-10 h-10 md:w-12 md:h-12 ${
           number === "2" ? "text-red-500" : "text-gray-700"
         }`}
       />
     </div>
-    <h3 className="text-xl font-bold mb-4">{title}</h3>
+    <h3 className="text-lg md:text-xl font-bold mb-4">{title}</h3>
     <p className="text-gray-600 mb-4">{description}</p>
     <button
       className={`flex items-center ${
@@ -48,7 +48,7 @@ const Services = () => {
       icon: Code,
       title: "Custom Software Development",
       description:
-        "Custom software development at Gallant Design. We specialize in providing high-quality, customized software solutions that perfectly match your business needs.",
+        "Custom software development at Stack Bridge. We specialize in providing high-quality, customized software solutions that perfectly match your business needs.",
     },
     {
       icon: Globe,
@@ -60,7 +60,7 @@ const Services = () => {
       icon: Brain,
       title: "Advanced AI Business Intelligence",
       description:
-        "Advanced AI Business Intelligence at Gallant Design. In today's data-driven world, businesses need more than just insights—they need actionable intelligence.",
+        "Advanced AI Business Intelligence at Stack Bridge. In today's data-driven world, businesses need more than just insights—they need actionable intelligence.",
     },
     {
       icon: ShieldCheck,
@@ -84,11 +84,11 @@ const Services = () => {
 
   return (
     <div>
-      <div className="container mx-auto px-24 py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-16">
           <p className="text-red-500 font-medium mb-4">SERVICE LIST</p>
-          <h2 className="text-4xl font-bold mb-4">
-            GALLANT DIGITAL CORE SERVICES
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Stack Bridge CORE SERVICES
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
             Your One-Stop Digital Partner- Creating Websites, Custom
@@ -97,7 +97,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <ServiceCard
               key={index}

@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="flex items-center">
               <img
                 src="/src/images/logo.png"
-                alt="Gallant Digital Logo"
+                alt="Stack Bridge Logo"
                 className="h-18 w-32"
               />
             </div>
@@ -108,7 +108,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © Copyright {new Date().getFullYear()} Gallant Digital
+              © Copyright {new Date().getFullYear()}  Stack Bridge
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a
