@@ -4,7 +4,7 @@ import logo from "../images/logo.png";
 const Footer = () => {
   return (
     <footer className="bg-[#091f40] text-white py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="space-y-6">
@@ -20,20 +20,20 @@ const Footer = () => {
           </div>
 
           {/* Contact & Address */}
-          <div className="space-y-6">
+          <div className="space-y-6 ">
             <h3 className="text-xl font-bold">Contact & Address</h3>
             <ul className="space-y-4 text-gray-300">
               <li className="hover:list-disc hover:text-red-600 transition-all duration-300">
                 contact@stackbridge360.com
               </li>
               <li className="hover:list-disc hover:text-red-600 transition-all duration-300">
-                Bangladesh: Salaha Limelight, House- 1/2, Block- A, Bank Colony,
-                Savar, Dhaka-1340
+                Bangladesh: Dhaka, House- 1/2, Block- A, Developer City, Li,
+                Dhaka-1340
               </li>
-              <li className="hover:list-disc hover:text-red-600 transition-all duration-300">
+              <li className="hover:list-disc hover:text-red-600 transition-all duration-100">
                 BD: +{880} 1324-417651
               </li>
-              <li className="hover:list-disc hover:text-red-600 transition-all duration-300">
+              <li className="hover:list-disc hover:text-red-600 transition-all duration-100">
                 USA: Grand Rapids, Michigan, 49514
               </li>
               <li className="hover:list-disc hover:text-red-600 transition-all duration-300">
@@ -43,39 +43,37 @@ const Footer = () => {
           </div>
 
           {/* Company Links */}
-          <div className="space-y-6 ">
+          <div className="space-y-6">
             <h3 className="text-xl font-bold">Company</h3>
-            <nav>
-              <ul className="space-y-4">
-                {[
-                  "About Us",
-                  "Our Products",
-                  "Custom Software Development",
-                  "Web Application Design & Development",
-                  "Advanced AI Business Intelligence",
-                  "Blog & News",
-                  "Career",
-                ].map((item) => (
-                  <li
-                    key={item}
-                    className="hover:list-disc hover:text-red-600 hover:font-semibold hover:text-lg transition-all duration-300"
+            <ul className="space-y-4 text-gray-300">
+              {[
+                "About Us",
+                "Our Products",
+                "Custom Software Development",
+                "Web Application Design & Development",
+                "Advanced AI Business Intelligence",
+                "Blog & News",
+                "Career",
+              ].map((item) => (
+                <li
+                  key={item}
+                  className="hover:list-disc hover:text-red-600 transition-all duration-100"
+                >
+                  <a
+                    href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
+                    className="transition-colors duration-300"
                   >
-                    <a
-                      href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
-                      className="text-gray-300 transition-colors duration-300"
-                    >
-                      {item}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </nav>
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Newsletter */}
           <div className="space-y-6">
             <h3 className="text-xl font-bold">Get The Updates</h3>
-            <p className="text-gray-300">
+            <p className="text-gray-300 hover:list-disc hover:text-red-600 transition-all duration-300">
               Sign up to receive the best offers on any kind of software.
             </p>
             <div className="flex flex-col space-y-4">
